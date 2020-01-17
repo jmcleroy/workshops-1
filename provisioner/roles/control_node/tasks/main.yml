@@ -98,7 +98,7 @@
     method: POST
     user: admin
     password: "{{admin_password}}"
-    body: "{{ lookup('file',playbook_dir+'/tower_license.json') }}"
+    body: "{{ lookup('file','/tmp/tower_license.json') }}"
     body_format: json
     validate_certs: false
     force_basic_auth: true
