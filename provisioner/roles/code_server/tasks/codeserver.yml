@@ -39,8 +39,8 @@
     remote_src: true
   register: output
 
-- name: install ansible vscode extension
-  command: "/home/{{username}}/{{ version_name }}/code-server --install-extension vscoss.vscode-ansible"
+#- name: install ansible vscode extension
+#  command: "/home/{{username}}/{{ version_name }}/code-server --install-extension vscoss.vscode-ansible"
 
 - name: move binary to /opt
   copy:
